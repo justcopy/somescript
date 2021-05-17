@@ -5,7 +5,7 @@
 const $ = new Env('健康社区兑换');
 
 const notify = $.isNode() ? require('./sendNotify') : '';
-let product_name = $.getdata('product_name') || ``; //默认不兑换
+let product_name = $.getdata('product_name') || `感冒清热颗粒1元包邮`; //默认不兑换
 let commodityType = ``,commodityId = ``
 
 //Node.js用户请在jdCookie.js处填写京东ck;
